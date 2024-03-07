@@ -10,12 +10,13 @@ def find_divisors(a, b, c, k):
     else:
         print(f"{k} не є дільником чисел a, b, c.")
 
-    try:
-        a = float(input("Введіть число a: "))
-        b = float(input("Введіть число b: "))
-        c = float(input("Введіть число c: "))
-        k = float(input("Введіть число k: "))
-    except ValueError as err:
-        raise ValueError(err)
 
-    find_divisors(a, b, c, k)
+try:
+    a = float(input("Введіть число a: "))
+    b = float(input("Введіть число b: "))
+    c = float(input("Введіть число c: "))
+    k = float(input("Введіть число k: "))
+except ValueError as err:
+    raise ValueError(err)
+
+find_divisors(a, b, c, k)
