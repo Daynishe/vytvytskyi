@@ -1,14 +1,20 @@
+def func(lst):
+    lstt = list()
+    for number in lst:
+        if number > 0:
+            lstt.append(pow(number, 2))
+        if number < 0:
+            lstt.append(pow(number, 4))
+    return lstt
+
+
 try:
-    a = int(input("Enter a number: "))
-    b = int(input("Enter a number: "))
-    c = int(input("Enter a number: "))
+    a = float(input("Enter a number: "))
+    b = float(input("Enter a number: "))
+    c = float(input("Enter a number: "))
 except ValueError as err:
     raise ValueError(err)
 
 lst = [a, b, c]
 
-for number in lst:
-    if number > 0:
-        print(pow(number, 2))
-    if number < 0:
-        print(pow(number, 4))
+print(func(lst))

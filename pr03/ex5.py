@@ -21,5 +21,5 @@ try:
 except ValueError as err:
     raise ValueError(err)
 
-location_result = determine_point_location(x_coordinate, y_coordinate)
-print(location_result)
+
+print(determine_point_location(x_coordinate, y_coordinate))

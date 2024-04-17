@@ -12,5 +12,7 @@ except ValueError as err:
 
 if calc_func(AxOne, AyOne) < calc_func(BxOne, ByOne):
     print(f"Точка А ({AxOne}, {ByOne}) знаходиться ближче до початку координат.")
+elif calc_func(AxOne, AyOne) == calc_func(BxOne, ByOne):
+    print (f"Рівні")
 else:
     print(f"Точка В ({BxOne}, {ByOne}) знаходиться ближче до початку координат.")
