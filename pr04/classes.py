@@ -11,8 +11,7 @@ class Transport:
 
 
 class Land(Transport):
-    # def __init__(self, transport_type, transport_name):
-    #     super().__init__(transport_type, transport_name)
+    pass
 
     def __str__(self):
         return f"Це дорожній транспорт. Його тип {self.transport_type}. Назва {self.transport_name}"
