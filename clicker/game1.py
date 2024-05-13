@@ -73,7 +73,8 @@ class ClickerApp(App):
                 f"\nПоточний CPS: {self.cps}"
                 f"\nВартість 'Рука' : {int(self.upgrades['Рука']['base_cost'] * (self.upgrades['Рука']['cost_increase_factor'] ** self.upgrades['Рука']['purchased']))}"
                 f"\nВарість 'Бендер' : {int(self.upgrades['Бендер']['base_cost'] * (self.upgrades['Бендер']['cost_increase_factor'] ** self.upgrades['Бендер']['purchased']))}"
-                f"\nВарість 'Мегамен' : {int(self.upgrades['Мегамен']['base_cost'] * (self.upgrades['Мегамен']['cost_increase_factor'] ** self.upgrades['Мегамен']['purchased']))}")
+                f"\nВарість 'Мегамен' : {int(self.upgrades['Мегамен']['base_cost'] * (self.upgrades['Мегамен']['cost_increase_factor'] ** self.upgrades['Мегамен']['purchased']))}"
+                f"\nВарість 'Чіт' : {int(self.upgrades['Чіт']['base_cost'] * (self.upgrades['Чіт']['cost_increase_factor'] ** self.upgrades['Чіт']['purchased']))}")
 
 if __name__ == "__main__":
     ClickerApp().run()
